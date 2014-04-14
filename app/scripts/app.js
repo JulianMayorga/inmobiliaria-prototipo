@@ -5,7 +5,9 @@ angular.module('inmobiliariaApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'mgcrea.ngStrap'
+  'ngTouch',
+  'mgcrea.ngStrap',
+  'angular-carousel'
 ])
   .config(function ($routeProvider) {
     $routeProvider

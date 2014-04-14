@@ -1,4 +1,4 @@
-<div class="navbar navbar-default" role="navigation" bs-navbar>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" bs-navbar>
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
@@ -6,7 +6,6 @@
         Banco Inmobiliario
       </a>
     </div>
-    <div>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="">
@@ -19,18 +18,18 @@
         <li data-match-route="/registro"><a href="#/registro">Registro</a></li>
         <li data-match-route="/ingreso"><a href="#/ingreso">Ingreso</a></li>
       </ul>
-    </div>
   </div>
-</div>
+</nav>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+<ul rn-carousel rn-carousel-control class="image-responsive slideshow" >
+  <li ng-repeat="image in propertyImages">
+    <div class="thumbnail">
+      <img src="{{image}}" class="image"></img>
+      <h3>Casa {{$index}}</h3>
+      <p>$1{{$index}}0,000 | Godoy Cruz, Mendoza</p>
+    </div>
+  </li>
+</ul>
 
 <div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
@@ -47,6 +46,25 @@
   <p>Spectacular Test Runner for JavaScript.</p>
 </div>
 
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
+<div class="container-fluid footer">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Banco Inmobiliario</h3>
+      <small>Frase banco inmobiliario</small>
+    </div>
+    <div class="col-md-5">
+      <h3>Dirección</h3>
+      <ul class="list-unstyled">
+        <li><span class="glyphicon glyphicon-globe"></span>Espejo 115 - 2° B - Capital, Mendoza</li>
+        <li><span class="glyphicon glyphicon-earphone"></span>Tel. (0261) 4293809</li>
+        <li><span class="glyphicon glyphicon-phone"></span>Nextel. 686*4128</li>
+        <li><span class="glyphicon glyphicon-phone"></span>Cel. (0261) 155 076199</li>
+        <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:bancoinmobiliariomza@yahoo.com.ar">bancoinmobiliariomza@yahoo.com.ar</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Compañía</h3>
+      <a href="#/acerca-de-nosotros">Acerca de nosotros</a>
+    </div>
+  </div>
 </div>
