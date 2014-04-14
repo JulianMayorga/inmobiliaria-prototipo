@@ -2,6 +2,18 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+.navbar-default {
+  background-color: #383C8F;
+}
+
+.navbar-default a {
+   color: white !important;
+}
+
+.navbar-default a:hover {
+   color: #777 !important;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

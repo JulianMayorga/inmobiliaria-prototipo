@@ -23,27 +23,54 @@
 
 <ul rn-carousel rn-carousel-control class="image-responsive slideshow" >
   <li ng-repeat="image in propertyImages">
-    <div class="thumbnail">
+  <div class="thumbnail">
+    <a href="#">
       <img src="{{image}}" class="image"></img>
       <h3>Casa {{$index}}</h3>
+    </a>
       <p>$1{{$index}}0,000 | Godoy Cruz, Mendoza</p>
     </div>
   </li>
 </ul>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<h3>Últimas Propiedades</h3>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Descripción</th>
+        <th>Ciudad</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#">Casa de 3 dormitorios a la venta</a></td>
+        <td>Las Heras</td>
+        <td>$100 000</td>
+        <td><a href="#">Ver</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Casa de 3 dormitorios a la venta</a></td>
+        <td>Guaymallén</td>
+        <td>$100 000</td>
+        <td><a href="#">Ver</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Casa de 3 dormitorios a la venta</a></td>
+        <td>Maipú</td>
+        <td>$100 000</td>
+        <td><a href="#">Ver</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Casa de 3 dormitorios a la venta</a></td>
+        <td>Ciudad</td>
+        <td>$100 000</td>
+        <td><a href="#">Ver</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="container-fluid footer">
