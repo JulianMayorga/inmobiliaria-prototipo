@@ -28,7 +28,7 @@ body {
 }
 
 .slideshow {
-  padding-top: 240px !important;
+  padding-top: 40px !important;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -103,8 +103,5 @@ body {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
-    }
-    .slideshow {
-      padding-top: 40px !important;
     }
 }
